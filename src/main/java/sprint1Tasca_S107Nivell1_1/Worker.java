@@ -36,7 +36,9 @@ public abstract class Worker {
         return hourlyRate;
     }
 
-    public abstract <T> double calculateSalary(T t);
+
+
+    public abstract double calculateSalary(double hour);
 
     @Override
     public boolean equals(Object o) {
