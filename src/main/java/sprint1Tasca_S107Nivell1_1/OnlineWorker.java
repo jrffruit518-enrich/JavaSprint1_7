@@ -1,6 +1,6 @@
 package sprint1Tasca_S107Nivell1_1;
 
-import javax.management.ConstructorParameters;
+
 
 /**
  * ClassName: OnlineWorker
@@ -23,7 +23,7 @@ public class OnlineWorker extends Worker{
     @Override
     public double calculateSalary(double hoursWorked) {
         if (hoursWorked<=0) {
-            throw new IllegalArgumentException("The number of hours worked cannot be negative.");
+            throw new IllegalArgumentException("The number of hours worked cannot be negative o zero.");
         }
         return super.getHourlyRate()*hoursWorked+INTERNETFLATRATE;
     }
