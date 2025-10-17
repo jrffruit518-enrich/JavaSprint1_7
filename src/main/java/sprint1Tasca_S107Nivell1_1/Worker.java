@@ -1,0 +1,61 @@
+package sprint1Tasca_S107Nivell1_1;
+
+import java.util.Objects;
+
+/**
+ * ClassName: Worker
+ * Package: sprint1Tasca_S107Nivell1_1
+ * Description:
+ * Author: Rong Jiang
+ * Create:17/10/2025 - 15:44
+ * Version:v1.0
+ */
+public abstract class Worker {
+    private String name;
+    private String surname;
+    private double hourlyRate;
+
+    public Worker(String name, String surname, double hourlyRate) {
+        this.name = name;
+        this.surname = surname;
+        this.hourlyRate = hourlyRate;
+    }
+
+    public Worker() {
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public double getHourlyRate() {
+        return hourlyRate;
+    }
+
+    public abstract <T> double calculateSalary(T t);
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Worker worker = (Worker) o;
+        return Double.compare(hourlyRate, worker.hourlyRate) == 0 && Objects.equals(name, worker.name) && Objects.equals(surname, worker.surname);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, surname, hourlyRate);
+    }
+
+    @Override
+    public String toString() {
+        return "Worker{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", hourlyRate=" + hourlyRate +
+                '}';
+    }
+}
