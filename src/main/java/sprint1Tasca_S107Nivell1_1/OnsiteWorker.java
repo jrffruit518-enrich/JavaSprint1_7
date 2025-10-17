@@ -20,12 +20,15 @@ public class OnsiteWorker extends Worker{
 
     @Override
     public double calculateSalary(double hour) {
-        return  38*hour+ gasolineCost;
+        if (hour<0) {
+            throw new IllegalArgumentException("The hour can't be negative.");
+        }
+        return  super.getHourlyRate()*hour+ gasolineCost;
     }
 
 
     @Override
     public String toString() {
-        return "OnsiteWorker{}";
+        return super.toString()+"OnsiteWorker{}";
     }
 }
