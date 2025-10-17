@@ -9,21 +9,19 @@ package sprint1Tasca_S107Nivell1_1;
  * Version:v1.0
  */
 public class OnsiteWorker extends Worker{
-    private static final double gasolineCost= 1000;
+    private static final double GASOLINECOST= 1000;
 
     public OnsiteWorker(String name, String surname, double hourlyRate) {
         super(name, surname, hourlyRate);
     }
 
-    public OnsiteWorker() {
-    }
 
     @Override
     public double calculateSalary(double hour) {
         if (hour<0) {
             throw new IllegalArgumentException("The hour can't be negative.");
         }
-        return  super.getHourlyRate()*hour+ gasolineCost;
+        return  super.getHourlyRate()*hour+ GASOLINECOST;
     }
 
 

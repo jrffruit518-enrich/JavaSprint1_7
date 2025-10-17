@@ -27,8 +27,6 @@ public abstract class Worker {
         this.hourlyRate = hourlyRate;
     }
 
-    public Worker() {
-    }
 
     public String getName() {
         return name;
