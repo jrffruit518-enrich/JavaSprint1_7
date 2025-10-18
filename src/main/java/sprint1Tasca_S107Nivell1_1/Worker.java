@@ -58,10 +58,9 @@ public abstract class Worker {
 
     @Override
     public String toString() {
-        return "Worker{" +
-                "name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                ", hourlyRate=" + hourlyRate +
-                '}';
+        return "name : " + name + '\'' +
+                "surname : " + surname + '\'' +
+                " hourlyRate : " + hourlyRate
+                ;
     }
 }
