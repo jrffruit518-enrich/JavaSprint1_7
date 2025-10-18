@@ -30,6 +30,6 @@ public class OnlineWorker extends Worker{
 
     @Override
     public String toString() {
-        return "OnlineWorker{ " + super.toString()+ " }" + '\n';
+        return '\n'+ "OnlineWorker" +'\n'+ super.toString();
     }
 }

@@ -58,9 +58,9 @@ public abstract class Worker {
 
     @Override
     public String toString() {
-        return "name : " + name + '\'' +
-                "surname : " + surname + '\'' +
-                " hourlyRate : " + hourlyRate
+        return "name : " + name + '\t' +
+                "surname : " + surname + '\t' +
+                " hourlyRate : " + hourlyRate+'\t'
                 ;
     }
 }
