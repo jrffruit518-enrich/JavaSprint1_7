@@ -3,7 +3,7 @@ package sprint1Tasca_S107Nivell1_2;
 
 /**
  * ClassName: OnlineWorker
- * Package: sprint1Tasca_S107Nivell1_1
+ * Package: sprint1Tasca_S107Nivell1_2
  * Description:
  * Author: Rong Jiang
  * Create:17/10/2025 - 17:51
@@ -21,7 +21,7 @@ public class OnlineWorker1 extends Worker1 {
     @Override
     public double calculateSalary(double hoursWorked) {
         if (hoursWorked<=0) {
-            throw new IllegalArgumentException("The number of hours worked cannot be negative o zero.");
+            throw new IllegalArgumentException("The number of hours worked cannot be negative or zero.");
         }
         return super.getHourlyRate()*hoursWorked+INTERNETFLATRATE;
     }
@@ -29,7 +29,7 @@ public class OnlineWorker1 extends Worker1 {
     @Deprecated
     public double calculateSalaryOld(double hoursWorked) {
         if (hoursWorked<=0) {
-            throw new IllegalArgumentException("The number of hours worked cannot be negative o zero.");
+            throw new IllegalArgumentException("The number of hours worked cannot be negative or zero.");
         }
         return  super.getHourlyRate()*hoursWorked;
     }

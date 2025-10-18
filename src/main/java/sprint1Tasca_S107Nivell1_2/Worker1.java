@@ -4,7 +4,7 @@ import java.util.Objects;
 
 /**
  * ClassName: Worker
- * Package: sprint1Tasca_S107Nivell1_1
+ * Package: sprint1Tasca_S107Nivell1_2
  * Description:
  * Author: Rong Jiang
  * Create:17/10/2025 - 15:44

@@ -1,10 +1,6 @@
 package sprint1Tasca_S107Nivell1_2;
 
 
-import sprint1Tasca_S107Nivell1_1.OnlineWorker;
-import sprint1Tasca_S107Nivell1_1.OnsiteWorker;
-import sprint1Tasca_S107Nivell1_1.Worker;
-
 /**
  * ClassName: WorkerMain1
  * Package: sprint1Tasca_S107Nivell1_2
