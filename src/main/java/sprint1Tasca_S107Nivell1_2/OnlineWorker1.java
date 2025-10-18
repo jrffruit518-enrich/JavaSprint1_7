@@ -18,13 +18,20 @@ public class OnlineWorker1 extends Worker1 {
     }
 
 
-    @Deprecated
     @Override
     public double calculateSalary(double hoursWorked) {
         if (hoursWorked<=0) {
             throw new IllegalArgumentException("The number of hours worked cannot be negative o zero.");
         }
         return super.getHourlyRate()*hoursWorked+INTERNETFLATRATE;
+    }
+
+    @Deprecated
+    public double calculateSalaryOld(double hoursWorked) {
+        if (hoursWorked<=0) {
+            throw new IllegalArgumentException("The number of hours worked cannot be negative o zero.");
+        }
+        return  super.getHourlyRate()*hoursWorked;
     }
 
     @Override

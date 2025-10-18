@@ -15,7 +15,6 @@ public class OnsiteWorker1 extends Worker1 {
         super(name, surname, hourlyRate);
     }
 
-    @Deprecated
     @Override
     public double calculateSalary(double hoursWorked) {
         if (hoursWorked<=0) {
@@ -23,6 +22,15 @@ public class OnsiteWorker1 extends Worker1 {
         }
         return  super.getHourlyRate()*hoursWorked+ GASOLINECOST;
     }
+
+    @Deprecated
+    public double calculateSalaryOld(double hoursWorked) {
+        if (hoursWorked<=0) {
+            throw new IllegalArgumentException("The number of hours worked cannot be negative o zero.");
+        }
+        return  super.getHourlyRate()*hoursWorked;
+    }
+
 
 
     @Override
