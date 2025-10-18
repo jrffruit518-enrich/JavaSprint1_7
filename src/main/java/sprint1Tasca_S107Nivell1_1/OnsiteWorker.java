@@ -27,6 +27,6 @@ public class OnsiteWorker extends Worker{
 
     @Override
     public String toString() {
-        return "OnsiteWorker{ " + super.toString()+ " }" + '\n';
+        return '\n'+ "OnsiteWorker" +'\n'+ super.toString();
     }
 }
