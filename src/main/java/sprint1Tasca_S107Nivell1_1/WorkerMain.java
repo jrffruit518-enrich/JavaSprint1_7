@@ -18,10 +18,10 @@ public class WorkerMain {
 
         double hours = 160;
 
-        System.out.println(workerOnLine1+" salary : " + workerOnLine1.calculateSalary(hours));
-        System.out.println(workerOnLine2+" salary : " + workerOnLine2.calculateSalary(hours));
-        System.out.println(workerOnSite1+" salary : " + workerOnSite1.calculateSalary(hours));
-        System.out.println(workerOnSite2+" salary : " + workerOnSite2.calculateSalary(hours));
+        System.out.println(workerOnLine1+" salary : " + workerOnLine1.calculateSalary(hours)+ " €");
+        System.out.println(workerOnLine2+" salary : " + workerOnLine2.calculateSalary(hours)+ " €");
+        System.out.println(workerOnSite1+" salary : " + workerOnSite1.calculateSalary(hours)+ " €");
+        System.out.println(workerOnSite2+" salary : " + workerOnSite2.calculateSalary(hours)+ " €");
         System.out.println();
 
         Worker worker = new OnsiteWorker("Jose","Sanchez",35);

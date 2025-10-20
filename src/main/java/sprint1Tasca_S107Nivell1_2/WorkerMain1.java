@@ -10,9 +10,9 @@ package sprint1Tasca_S107Nivell1_2;
  * Version:v1.0
  */
 
-@SuppressWarnings("deprecation")
-public class WorkerMain1 {
 
+public class WorkerMain1 {
+    @SuppressWarnings("deprecation")
     public static void main(String[] args) {
         OnlineWorker1 workerOnLine1 = new OnlineWorker1("Rong","Jiang",40);
         OnsiteWorker1 workerOnSite1 = new OnsiteWorker1("Zhicheng","Jiang",42);
